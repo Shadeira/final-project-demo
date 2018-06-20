@@ -10,4 +10,8 @@ class ApplicationController < Sinatra::Base
   get '/' do
     return erb :index
   end
+  
+  get '/secret' do
+    return "You found the secret"
+end
 end
